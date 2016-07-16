@@ -1,8 +1,0 @@
-machine:
-  node:
-    version: 6
-
-test:
-  post:
-    - npm run enforce
-    - npm run lint
