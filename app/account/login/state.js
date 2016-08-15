@@ -1,6 +1,6 @@
 'use strict';
 
-var HTML = require('../../views/account/login.html');
+var HTML = require('./index.html');
 
 module.exports = function ($stateProvider) {
 

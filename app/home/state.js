@@ -1,6 +1,6 @@
 'use strict';
 
-var HTML = require('../views/home.html');
+var HTML = require('./index.html');
 
 module.exports = function ($stateProvider) {
 

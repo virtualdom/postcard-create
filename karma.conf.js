@@ -17,7 +17,7 @@ module.exports = function (config) {
         bundle.on('prebundle', function () {
           bundle.transform(Istanbul, {
             ignore: [
-              '**/views/**',
+              '**/app/**/*.html',
               '**/styles/**',
               '**/public/**',
               '**/vendor/**'
