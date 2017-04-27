@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  API_HOST: 'https://lob.com/api'
+  API_HOST: 'https://api.lob.com/v1'
 };

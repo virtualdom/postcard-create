@@ -7,7 +7,7 @@ module.exports = function (API) {
   var Auth = {};
 
   Auth.login = function (user) {
-    return API.post(Config.API_HOST + '/auth/login', user);
+    return API.post(Config.API_HOST + '/sessions', user);
   };
 
   return Auth;

@@ -33,7 +33,7 @@ describe('auth service', function () {
 
       $rootScope.$apply();
 
-      expect(API.post.firstCall.args[0]).to.eql(Config.API_HOST + '/auth/login');
+      expect(API.post.firstCall.args[0]).to.eql(Config.API_HOST + '/sessions');
       expect(API.post.firstCall.args[1]).to.eql(user);
 
       API.post.restore();
