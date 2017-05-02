@@ -11,7 +11,7 @@ module.exports = function ($scope, $cookies, $state, Auth) {
 
     Auth.login(user)
     .then(function (session) {
-      $cookies.put('token', session.token);
+      $cookies.put('token', session.tokens.test);
       $cookies.putObject('user', session.user);
       return $state.go('home');
     })

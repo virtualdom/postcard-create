@@ -6,7 +6,7 @@ var Sinon   = require('sinon');
 
 require('angular-mocks');
 
-var session = { token: 'banana', user: { id: 'user_id' } };
+var session = { tokens: { test: 'banana', live: 'apple' }, user: { id: 'user_id' } };
 var error = { message: 'error message' };
 
 describe('login controller', function () {
@@ -42,7 +42,7 @@ describe('login controller', function () {
 
       $scope.$apply();
 
-      expect($cookies.get('token')).to.eql(session.token);
+      expect($cookies.get('token')).to.eql(session.tokens.test);
     });
 
     it('sets the user cookie', function () {
